@@ -464,3 +464,119 @@ while True:
         break  # Exit the loop
     else:
         print("Invalid option. Please try again.")
+
+#6.3
+###
+# House lighting with three bulbs and two switches
+# Checking how many bulbs are illuminating the house
+#
+light_switch1 = False # False - switch off, True - switch on
+light_switch2 = False
+bulbs_on = 0
+if light_switch1:
+    bulbs_on += 1
+if light_switch2:
+    bulbs_on += 2
+print(f'{bulbs_on} are on')
+
+#6.4
+###
+# Password validator
+# New password is at least 12 characters long
+#
+new_password = input('Enter new password: ')
+if len(new_password) < 12:
+   print('Password too short (min. 12 chars)')
+
+#6.5
+###
+# Program that simulates the operation of an electronic thermometer.
+#
+temperature = int(input("Enter a temperature: "))
+if temperature > 35:
+    print("It is extermely hot")
+elif temperature > 30:
+    print('It is hot')
+elif temperature >= 15:
+    print('It is warm')
+elif temperature >= 0:
+    print('It is cold')
+else:
+    print ("Warning, frost")
+
+#6.6
+###
+#
+time = int(input("How many hours you want to stay here: "))
+sum = 0
+while time != 0:
+    if time > 6:
+        cost = 20
+    elif time >= 3:
+        cost = 15
+    elif time >= 1:
+        cost = 5
+    sum = sum + cost
+    time -= 1
+print(f'You will pay {sum} PLN by parking')
+
+#6.7
+###
+#
+age = int(input("How old are you: "))
+if age >= 65:
+    group = 'senior'
+elif age >= 20:
+    group = 'adult'
+elif age >= 13:
+    group = 'teen'
+elif age < 13:
+    group = 'child'
+
+print(f'You are {group}')
+
+#6.8
+###
+# Checking if both people are adults
+#
+person1_name = input('Enter first person name: ')
+person1_age = int(input('Enter first person age: '))
+person2_name = input('Enter second person name: ')
+person2_age = int(input('Enter second person age: '))
+if person1_age >= 18 and person2_age >= 18:
+    print(f'Both {person1_name} and {person2_name} are adult')
+else:
+    print(f'Either{person1_name} or {person2_name} is not an adult')
+
+#6.9
+###
+#
+name = input('Enter name: ')
+if name[-1] == 'a':
+    print(name, 'is a Polish female name')
+else:
+    print(name, 'is not a Polish female name')
+
+#6.10
+###
+#
+hdog = int(input("Enter the dog's age in human years: "))
+a=0
+ddog = 0
+while hdog != a:
+    if a < 2:
+        ddog += 10.5
+    else:
+        ddog += 4
+    a += 1
+    print(ddog)
+print(f"The dog's age in dog's years is {ddog} years.")
+
+#6.11
+###
+#
+current = 140
+prev = 200
+if current < prev:
+    print('Buy the product!!')
+    print(f'Product price reduced by {(prev - current)/prev * 100}%')
