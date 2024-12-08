@@ -1,8 +1,14 @@
 #6.14
 ###
 #
-facebook = input('Do you have facebook? (True/False): ')
-twitter = input('Do you have twitter? (True/False): ')
-instagram = input('Do you have instagram? (True/False): ')
-if int(facebook == True) + int(twitter == True) + int(instagram == True) >= 2:
-    print('You are a good influencer!')
+ean = input('Enter EAN: ')
+y = ''
+z = 0
+for x in ean:
+    y = y + x
+    z += 1
+    if y == '590':
+        print('Poland')
+        break
+    if z > 3:
+        break

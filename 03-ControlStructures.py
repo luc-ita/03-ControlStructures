@@ -602,3 +602,12 @@ speed_limit_max = 140
 if car_speed > speed_limit_max or car_speed < speed_limit_min:
     print('Warning: invalid car speed!!')
 
+#6.14
+###
+#
+facebook = input('Do you have facebook? (Empty if not): ')
+twitter = input('Do you have twitter? (Empty if not): ')
+instagram = input('Do you have instagram? (Empty if not): ')
+if (bool(facebook) + bool(twitter) + bool(instagram)) >= 2:
+    print('You are a good influencer!')
+
