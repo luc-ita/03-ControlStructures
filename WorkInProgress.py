@@ -1,8 +1,8 @@
-#6.12
+#6.14
 ###
 #
-current = 140
-prev = 200
-if current < prev:
-    print('Buy the product!!')
-    print(f'Product price reduced by {(prev - current)/prev * 100}%')
+facebook = input('Do you have facebook? (True/False): ')
+twitter = input('Do you have twitter? (True/False): ')
+instagram = input('Do you have instagram? (True/False): ')
+if int(facebook == True) + int(twitter == True) + int(instagram == True) >= 2:
+    print('You are a good influencer!')

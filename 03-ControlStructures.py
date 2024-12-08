@@ -580,3 +580,25 @@ prev = 200
 if current < prev:
     print('Buy the product!!')
     print(f'Product price reduced by {(prev - current)/prev * 100}%')
+
+#6.12
+###
+#
+number = int(input('Number of products purchased: '))
+price = int(input('Product price: '))
+extra = 0
+if number > 2:
+    extra = number - 2
+
+total = 2 * price + extra * price * 0.75
+print(f'Ammount to pay: {total}')
+
+#6.13
+###
+#
+car_speed = int(input('Enter car speed: '))
+speed_limit_min = 40
+speed_limit_max = 140
+if car_speed > speed_limit_max or car_speed < speed_limit_min:
+    print('Warning: invalid car speed!!')
+
